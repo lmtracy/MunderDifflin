@@ -6,7 +6,7 @@
     	<link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="javascript.js"></script>
     <div class="navbar">
       <strong>
       <a href="#contact">Contact</a>
@@ -15,40 +15,36 @@
     </strong>
     </div>
 
-
-  <div class="AboutUs">
-    <h1 class="mainText">We are Munder Difflin</h1>
-
+<div class="AboutUs">
+<div class="aniText">We are Dunder Mifflin</div>
   </div>
 
 <div class="Products">
-<div class="aniText">OUR PRODUCTS</div>
+<h1>OUR PRODUCTS</h1>
 
     <div class="row">
         <div class="column">
+          <img class="icons" src="personal.svg">
           <h2>Personal</h2>
           <p>Choose from our selection of high quality stationary for your next project</p>
     </div>
       <div class="column">
+        <img class="icons" src="building.svg">
         <h2>Business</h2>
         <p>Our representatives will work with you to determine your stationary needs for your business</p>
     </div>
 </div>
 
 <div class="Contact">
-  <div class="aniText">CONTACT US</div>
+  <h1>CONTACT US</h1>
 
   <div class="container">
   <form action="/action_page.php">
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
+    <input type="text" name="firstname" placeholder="Your name.." style="width:245px">
+    <input type="text" name="lastname" placeholder="Email" style="width:245px">
+    <p>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="width:500px; height:200px"></textarea>
+    <br>
     <input type="submit" value="Submit">
   </form>
 </div>

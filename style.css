@@ -11,10 +11,15 @@ body, html
   src: url("GeosansLight.ttf");
 }
 
+h1 {
+  text-align: center;
+  font-size: 60px;
+}
+
 
 .aniText {
   text-align: center;
-  font-size: 60px;
+  font-size: 80px;
   opacity: 0;
   animation: fadeIn 3s forwards;
 }
@@ -40,24 +45,20 @@ body, html
   overflow: auto;
 }
 
-.mainText {
-  font-weight: 900;
-  font-size: 3.5em;
-}
-
-.mainText .letter {
-  display: inline-block;
-  line-height: 1em;
-}
-
 .Products {
   font-size: 20px;
   font-family: Geo-Sans;
   background-color: #4B4E6D;
+  background-position: center;
   color: #fff8f0;
   min-height: 600px;
   overflow: auto;
   padding-top: 60px;
+}
+
+.icons {
+  fill: white;
+  height: 25%;
 }
 
 .row {
@@ -70,19 +71,18 @@ body, html
 }
 
 .Contact {
-  font-size: 16px;
+  font-size: 30px;
   font-family: Geo-Sans;
   background-color: #718f94;
   color: #fff8f0;
   min-height: 600px;
-  overflow: auto;
   padding-top: 60px;
 }
 
 .container {
-border-radius: 5px;
-padding: 20px;
-resize: vertical;
+border-radius: 10px;
+padding: 50px;
+text-align: center;
 }
 
 .navbar {
