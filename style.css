@@ -7,10 +7,17 @@ body, html
   font-family: helvetica;
 }
 
+a {
+  color: inherit;
+}
 
 h1 {
   text-align: center;
   font-size: 60px;
+}
+
+h2 {
+  font-size: 32px;
 }
 
 p.mainSubText {
@@ -41,7 +48,7 @@ p.mainSubText {
 
 .AboutUs {
   font-size: 16px;
-  background-image: url("blanksheet.jpg");
+  background-image: url("paper1.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no repeat;
@@ -69,11 +76,28 @@ p.mainSubText {
 
 .row {
   display: flex;
+  text-align: center;
 }
 
 .column {
-  flex: 50%;
-  padding: 30px 30px 30px 30px;
+  flex: 33.3%;
+  padding: 10px;
+  text-align: : center;
+}
+
+.button {
+  background-color: lightgray;
+  border: none;
+  border-radius: 12px;
+  color: black;
+  padding: 15px 32px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.button:hover {
+  background-color: white;
 }
 
 .Contact {
@@ -85,31 +109,48 @@ p.mainSubText {
 }
 
 .container {
-border-radius: 10px;
-padding: 10px;
-text-align: center;
-margin: 5px;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: right;
+  margin: 5px;
 }
 
-.navbar {
-  overflow: hidden;
+.address {
+  float: left;
+  font-size: 16px;
+  padding: 20px;
+}
+
+/* Navigation bar CSS */
+nav {
   position: fixed;
   top: 0;
-  background-color: white;
+  left: 0;
   height: 40px;
   width: 100%;
-
-}
-.navbar a {
-  float: right;
-  display: block;
-  color: #gray;
-  text-align: center;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
-  font-size: 18px;
+  background-color: transparent;
+  box-sizing: border-box;
+  padding: 12px 18px;
+  transition: background-color 0.4s ease-out;
 }
 
-.navbar a:hover {
+nav a {
+   float: right;
+   display: block;
+   padding-right: 20px;
+   text-decoration: none;
+   font-size: 16px;
+}
+
+nav a:hover {
+  color: lightgray;
+}
+
+nav.scroll {
+  background-color: #fff8f0;
   color: black;
+}
+
+body > header {
+  margin-top: 4.7em;
 }
