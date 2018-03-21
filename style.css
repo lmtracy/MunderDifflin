@@ -4,21 +4,25 @@ body, html
   height: 100%;
   padding: 0px;
   margin: 0px;
+  font-family: helvetica;
 }
 
-@font-face {
-  font-family: Geo-Sans;
-  src: url("GeosansLight.ttf");
-}
 
 h1 {
   text-align: center;
   font-size: 60px;
 }
 
+p.mainSubText {
+  font-size: 40px;
+  text-align: center;
+  color: black;
+}
 
 .aniText {
   text-align: center;
+  color: black;
+  padding-top: 100px;
   font-size: 80px;
   opacity: 0;
   animation: fadeIn 3s forwards;
@@ -31,24 +35,18 @@ h1 {
   100% {opacity: 1;}
 }
 
-/*Paper plane animation */
 .plane {
-  position: absolute;
-  transition: all 2s ease-in-out;
-}
-#axis:hover .move-right {
-  transform: translate(250px,0);
+  float: left bottom;
 }
 
 .AboutUs {
   font-size: 16px;
-  font-family: Geo-Sans;
-  background-image: url("paper1.jpg");
+  background-image: url("blanksheet.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no repeat;
   background-size: cover;
-  min-height: 500px;
+  min-height: 600px;
   color: #fff8f0;
   padding-top: 100px;
   overflow: auto;
@@ -56,11 +54,10 @@ h1 {
 
 .Products {
   font-size: 20px;
-  font-family: Geo-Sans;
   background-color: #4B4E6D;
   background-position: center;
   color: #fff8f0;
-  min-height: 600px;
+  min-height: 500px;
   overflow: auto;
   padding-top: 60px;
 }
@@ -81,16 +78,15 @@ h1 {
 
 .Contact {
   font-size: 30px;
-  font-family: Geo-Sans;
   background-color: #718f94;
   color: #fff8f0;
-  min-height: 600px;
-  padding-top: 60px;
+  min-height: 500px;
+  padding-top: 40px;
 }
 
 .container {
 border-radius: 10px;
-padding: 20px;
+padding: 10px;
 text-align: center;
 margin: 5px;
 }
@@ -99,18 +95,19 @@ margin: 5px;
   overflow: hidden;
   position: fixed;
   top: 0;
+  background-color: white;
+  height: 40px;
   width: 100%;
 
 }
 .navbar a {
   float: right;
   display: block;
-  color: #fff8f0;
+  color: #gray;
   text-align: center;
-  padding: 20px 20px 20px 20px;
+  padding: 10px 20px 10px 20px;
   text-decoration: none;
-  font-size: 25px;
-  font-family: Geo-Sans;
+  font-size: 18px;
 }
 
 .navbar a:hover {
