@@ -20,16 +20,20 @@ src: url("Montserrat-regular.otf");
 
 a {
   color: inherit;
+  margin: 0;
 }
 
 h1 {
   font-family: Montserrat-Black;
   text-align: center;
   font-size: 50px;
+  margin: 0;
+  padding: 0;
 }
 
 h2 {
   font-size: 28px;
+  padding-top: 40px;
 }
 
 /* Main section */
@@ -38,14 +42,14 @@ p.mainSubText {
   text-align: center;
   color: black;
   font-family: Montserrat-Black;
-
+  margin: 0;
 }
 
 .aniText {
   font-family: Montserrat-Black;
   text-align: center;
   color: black;
-  padding-top: 90px;
+  padding-top: 120px;
   font-size: 60px;
   opacity: 0;
   animation: fadeIn 3s forwards;
@@ -67,9 +71,9 @@ p.mainSubText {
   background-repeat: no repeat;
   background-size: cover;
   min-height: 600px;
-  color: #ffffff;
-  padding-top: 100px;
-  overflow: auto;
+  padding 100px;
+  overflow: hidden;
+  top: 0;
 }
 
 /* Products section */
@@ -145,6 +149,7 @@ nav {
   background-color: transparent;
   box-sizing: border-box;
   padding: 12px 18px;
+  margin: 0;
   transition: background-color 0.4s ease-out;
 }
 
@@ -178,7 +183,7 @@ nav.scroll {
 /* Testimonial section */
 #testimonials {
   background-color: #ffffff;
-  /* height: 600px; */
+  height: 600px;
   padding-top: 60px;
 }
 
@@ -188,7 +193,7 @@ nav.scroll {
   border-radius: 5px;
   width: 700px;
   padding: 10px;
-  margin: 16px 0
+  margin: 16px 0;
 }
 
 .testimonial img {
