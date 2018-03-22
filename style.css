@@ -4,7 +4,18 @@ body, html
   height: 100%;
   padding: 0px;
   margin: 0px;
-  font-family: helvetica;
+  font-family: Montserrat;
+}
+
+/* Custom font */
+@font-face {
+font-family: "Montserrat";
+src: url("Montserrat-regular.otf");
+}
+
+@font-face {
+  font-family: "Montserrat-Black";
+  src: url("Montserrat-black.otf");
 }
 
 a {
@@ -12,28 +23,33 @@ a {
 }
 
 h1 {
+  font-family: Montserrat-Black;
   text-align: center;
-  font-size: 60px;
+  font-size: 50px;
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 28px;
 }
 
 p.mainSubText {
   font-size: 40px;
   text-align: center;
   color: black;
+  font-family: Montserrat-Black;
+
 }
 
 .aniText {
+  font-family: Montserrat-Black;
   text-align: center;
   color: black;
-  padding-top: 100px;
-  font-size: 80px;
+  padding-top: 90px;
+  font-size: 60px;
   opacity: 0;
   animation: fadeIn 3s forwards;
 }
+
 
 /* CSS for text animation */
 @keyframes fadeIn {
@@ -46,8 +62,7 @@ p.mainSubText {
   float: left bottom;
 }
 
-.AboutUs {
-  font-size: 16px;
+.Home {
   background-image: url("paper1.jpg");
   background-attachment: fixed;
   background-position: center;
@@ -69,11 +84,6 @@ p.mainSubText {
   padding-top: 60px;
 }
 
-.icons {
-  fill: white;
-  height: 25%;
-}
-
 .row {
   display: flex;
   text-align: center;
@@ -81,8 +91,8 @@ p.mainSubText {
 
 .column {
   flex: 33.3%;
-  padding: 10px;
-  text-align: : center;
+  padding: 50px;
+  text-align: center;
 }
 
 .button {
@@ -108,17 +118,18 @@ p.mainSubText {
   padding-top: 40px;
 }
 
+/* Products section */
 .container {
-  border-radius: 10px;
-  padding: 20px;
-  text-align: right;
+  border-radius: 30px;
+  padding-right: 80px;
+  float: right;
   margin: 5px;
 }
 
 .address {
   float: left;
-  font-size: 16px;
-  padding: 20px;
+  font-size: 20px;
+  padding-left: 100px;
 }
 
 /* Navigation bar CSS */
@@ -134,12 +145,22 @@ nav {
   transition: background-color 0.4s ease-out;
 }
 
-nav a {
+
+nav .navbar-right {
    float: right;
    display: block;
    padding-right: 20px;
    text-decoration: none;
-   font-size: 16px;
+   font-size: 18px;
+}
+
+nav .navbar-left {
+  float: left;
+  display: block;
+  padding-right: 20px;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: Montserrat-Black;
 }
 
 nav a:hover {
@@ -149,8 +170,4 @@ nav a:hover {
 nav.scroll {
   background-color: #fff8f0;
   color: black;
-}
-
-body > header {
-  margin-top: 4.7em;
 }
