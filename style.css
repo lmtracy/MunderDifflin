@@ -55,6 +55,19 @@ p.mainSubText {
   animation: fadeIn 3s forwards;
 }
 
+.Home {
+  background-image: url("paper1.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no repeat;
+  background-size: cover;
+  min-height: 600px;
+  padding: 100px;
+  overflow: hidden;
+  top: 0;
+}
+
+
 
 /* CSS for text animation */
 @keyframes fadeIn {
@@ -63,18 +76,6 @@ p.mainSubText {
   100% {opacity: 1;}
 }
 
-
-.Home {
-  background-image: url("paper1.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no repeat;
-  background-size: cover;
-  min-height: 600px;
-  padding 100px;
-  overflow: hidden;
-  top: 0;
-}
 
 /* Products section */
 .Products {
@@ -207,7 +208,7 @@ nav.scroll {
   margin-right: 15px;
 }
 
-/* Slideshow */
+/* Testimonials Slideshow */
 .mySlides {
     display: none;
 }
