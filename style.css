@@ -32,6 +32,7 @@ h2 {
   font-size: 28px;
 }
 
+/* Main section */
 p.mainSubText {
   font-size: 40px;
   text-align: center;
@@ -58,9 +59,6 @@ p.mainSubText {
   100% {opacity: 1;}
 }
 
-.plane {
-  float: left bottom;
-}
 
 .Home {
   background-image: url("paper1.jpg");
@@ -74,6 +72,7 @@ p.mainSubText {
   overflow: auto;
 }
 
+/* Products section */
 .Products {
   font-size: 20px;
   background-color: #4B4E6D;
@@ -110,6 +109,7 @@ p.mainSubText {
   background-color: white;
 }
 
+/* Contact section */
 .Contact {
   font-size: 30px;
   background-color: #718f94;
@@ -118,7 +118,6 @@ p.mainSubText {
   padding-top: 40px;
 }
 
-/* Products section */
 .container {
   border-radius: 30px;
   padding-right: 80px;
@@ -130,6 +129,10 @@ p.mainSubText {
   float: left;
   font-size: 20px;
   padding-left: 100px;
+}
+
+.plane {
+  float: left bottom;
 }
 
 /* Navigation bar CSS */
@@ -172,9 +175,10 @@ nav.scroll {
   color: black;
 }
 
+/* Testimonial section */
 #testimonials {
   background-color: #ffffff;
-  height: 600px;
+  /* height: 600px; */
   padding-top: 60px;
 }
 
@@ -199,6 +203,9 @@ nav.scroll {
 }
 
 /* Slideshow */
+.mySlides {
+    display: none;
+}
 
 .slideshow-container {
   max-width: 1000px;
