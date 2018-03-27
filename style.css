@@ -55,8 +55,8 @@ p.mainSubText {
   animation: fadeIn 3s forwards;
 }
 
-.Home {
-  background-image: url("paper1.jpg");
+#Home {
+  background-image: url("images/paper1.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no repeat;
@@ -78,7 +78,7 @@ p.mainSubText {
 
 
 /* Products section */
-.Products {
+#Products {
   font-size: 20px;
   background-color: #4B4E6D;
   background-position: center;
@@ -115,7 +115,7 @@ p.mainSubText {
 }
 
 /* Contact section */
-.Contact {
+#Contact {
   font-size: 30px;
   background-color: #718f94;
   color: #ffffff;
