@@ -6,6 +6,7 @@ window.onscroll = () => {
 
 
 /* SLIDESHOW JS */
+/*code from W3 schools */
 /*this code sets the order of items in the slideshow, runs if statements and for loops so users can scroll through  */
 let slideNumber = 1;
 showSlides(slideNumber);
